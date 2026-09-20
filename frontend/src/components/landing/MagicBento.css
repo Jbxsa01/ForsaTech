@@ -1,0 +1,91 @@
+.bento-section {
+  position: relative;
+}
+
+.card-grid {
+  display: grid;
+  gap: 12px;
+  align-items: stretch;
+  grid-auto-flow: row dense;
+}
+
+.magic-bento-card {
+  position: relative;
+  border-radius: 18px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #0f0a1c;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  aspect-ratio: 1 / 1;
+}
+
+.magic-bento-card--border-glow {
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.45),
+    0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+.magic-bento-card__image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 48%;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #120d22;
+}
+
+.magic-bento-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.magic-bento-card__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(146, 121, 255, 0.16);
+  color: #d8d0ff;
+}
+
+.magic-bento-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.magic-bento-card__title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #f4f1ff;
+  margin: 0;
+}
+
+.magic-bento-card__description {
+  font-size: 14px;
+  color: #c7c2d9;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.particle {
+  pointer-events: none;
+}
+
+.global-spotlight {
+  pointer-events: none;
+}
+
